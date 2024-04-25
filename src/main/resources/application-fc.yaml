@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    gcp:
+      pubsub:
+        subscriber:
+          executor-threads: 2
+          flow-control:
+            max-outstanding-element-count: 2
+      project-id: st-misc-demo
