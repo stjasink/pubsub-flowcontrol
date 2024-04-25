@@ -18,8 +18,7 @@ class Subscriber(
 
     fun processMessage(message: BasicAcknowledgeablePubsubMessage) {
         val content = message.pubsubMessage.data.toString(Charset.defaultCharset())
-        val ourTotal = total.incrementAndGet()
-        println("Got message $content (total $ourTotal)")
+        println("Got message $content (total ${total.incrementAndGet()})")
         Thread.sleep(5_000)
         message.ack()
     }
