@@ -1,9 +1,10 @@
 spring:
   cloud:
     gcp:
+      project-id: st-misc-demo
       pubsub:
         subscriber:
-          executor-threads: 2
+          max-ack-extension-period: 10
           flow-control:
-            max-outstanding-element-count: 2
-      project-id: st-misc-demo
+            max-outstanding-element-count: 4
+          executor-threads: 4

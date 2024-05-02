@@ -1,7 +1,7 @@
 spring:
   cloud:
     gcp:
-#      pubsub:
-#        subscriber:
-#          executor-threads: 2
       project-id: st-misc-demo
+      pubsub:
+        subscriber:
+          max-ack-extension-period: 10
