@@ -1,1 +1,1 @@
-rootProject.name = "golfington-api"
+rootProject.name = "pubsub-flowcontrol"
